@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root { --bg: #aa8491; }
+:root { --bg2: #d17ca7; }
+
+ html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+}
+
+.hero{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  align-content: center;
+}
+
+#background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+     background: linear-gradient(
+    rgba(0,0,0,.25),          /* darken top a bit */
+    rgba(0,0,0,.10) 55%,
+    rgba(198,154,167,1) 98%   /* blend into page bg near the wave */
+  );
+  pointer-events: none;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    text-align: center;
+    
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20vh 10vw;
+}
+
+.wave-sep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;              /* stick to the bottom edge */
+  height: 120px;          /* wave height; tweak to taste */
+  width: 100%;
+  z-index: -1;            /* in front of the video, behind content */
+}
+
+.wave-sep path {
+  fill: var(--bg);        /* same color as page background */
+  opacity: 1;
+  filter: blur();
+  filter: drop-shadow(0 -2px 6px rgba(0,0,0,.15));
+}
+
+.hero-content h1{
+    margin-bottom: 10px;
+}
+
+.glow-btn {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 2px solid var(--bg2);
+  border-radius: 12px;
+  cursor: pointer;
+
+  /* glow border effect */
+  box-shadow: 0 0 10px var(--bg2),
+              0 0 20px rgba(209,124,167,0.5);
+
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.glow-btn:hover {
+  color: #fff;
+  background: var(--bg2);
+  box-shadow: 0 0 20px var(--bg),
+              0 0 40px var(--bg),
+              0 0 60px var(--bg);
+  transform: scale(1.05);
+}
+
+/* active (when clicked) */
+.glow-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px var(--bg2),
+              0 0 20px rgba(209,124,167,0.6);
+}
