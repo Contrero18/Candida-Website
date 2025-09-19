@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 
-:root { --bg: #aa8491; }
+:root { --bg: #f97cac; }
 :root { --bg2: #d17ca7; }
 
  html {
@@ -20,7 +20,7 @@ body {
 
 .hero{
   position: relative;
-  min-height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   align-content: center;
 }
@@ -29,15 +29,19 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+    top: 0;
     min-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
+    transform: scaleX(-1);
     z-index: -2;
+    pointer-events: none;
+    object-fit: cover;
+    /*
      background: linear-gradient(
-    rgba(0,0,0,.25),          /* darken top a bit */
+    rgba(0,0,0,.25),          // darken top a bit
     rgba(0,0,0,.10) 55%,
-    rgba(198,154,167,1) 98%   /* blend into page bg near the wave */
-  );
-  pointer-events: none;
+    rgba(198,154,167,1) 98%   // blend into page bg near the wave 
+  );*/
 }
 
 .hero-content {
@@ -45,7 +49,6 @@ body {
     inset: 0;
     z-index: 1;
     text-align: center;
-    
     color: white;
     font-family: Trebuchet MS;
     font-weight: bold;
@@ -57,7 +60,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;              /* stick to the bottom edge */
+  bottom: -1px;              /* stick to the bottom edge */
   height: 120px;          /* wave height; tweak to taste */
   width: 100%;
   z-index: -1;            /* in front of the video, behind content */
@@ -80,13 +83,13 @@ body {
   font-weight: 600;
   color: #fff;
   background: transparent;
-  border: 2px solid var(--bg2);
+  border: 2px solid var(--bg);
   border-radius: 12px;
   cursor: pointer;
 
   /* glow border effect */
-  box-shadow: 0 0 10px var(--bg2),
-              0 0 20px rgba(209,124,167,0.5);
+  box-shadow: 0 0 10px var(--bg),
+              0 0 20px rgba(249, 124, 172);
 
   transition: all 0.3s ease;
 }
@@ -94,7 +97,7 @@ body {
 /* hover effect */
 .glow-btn:hover {
   color: #fff;
-  background: var(--bg2);
+  background: var(--bg);
   box-shadow: 0 0 20px var(--bg),
               0 0 40px var(--bg),
               0 0 60px var(--bg);
@@ -104,6 +107,6 @@ body {
 /* active (when clicked) */
 .glow-btn:active {
   transform: scale(0.98);
-  box-shadow: 0 0 10px var(--bg2),
-              0 0 20px rgba(209,124,167,0.6);
+  box-shadow: 0 0 10px var(--bg),
+              0 0 20px rgba(249, 124, 172);
 }
