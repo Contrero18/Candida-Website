@@ -1,6 +1,6 @@
 // for language updates
 async function fetchLanguageData(lang) {
-    const response = await fetch(`../Languages/${lang}.json`);
+    const response = await fetch(`Languages/${lang}.json`);
     return response.json();
 }
 

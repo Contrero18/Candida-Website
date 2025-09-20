@@ -24,7 +24,7 @@ nav{
 
 }
 
-.language-btn{
+#language-btn{
   display:inline-flex; 
   align-items:center; 
   gap:6px;
@@ -36,7 +36,7 @@ nav{
   cursor:pointer;
 }
 
-.language-btn:focus-visible{ 
+#language-btn:focus-visible{ 
   outline:2px solid #8ab4f8;
    outline-offset:2px; 
 }
@@ -53,6 +53,11 @@ nav{
   height: 12px;
   margin-right: 3px;
 }
+
+#language-btn[aria-expanded="true"] .chev{
+  transform: rotate(180deg);
+}
+
 
 #language-menu{
   position:absolute; 
