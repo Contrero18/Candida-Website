@@ -3,21 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chestionar Candida</title>
+  <title data-i18n="Candida Questionnaire"></title>
 
-  <link rel="stylesheet" href="index.css" />
-  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="Styles/index.css" />
+
 
 </head>
 <body>
+
+<nav>
+    <button id="language-btn" aria-expanded="false">
+      <img data-i18n-img="flag" src="Media/clear.png" id="logo-image">
+      <span data-i18n="language-btn"></span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg> 
+    </button>
+    <div id="language-menu">
+      <a href="index.html" onclick="changeLanguage('en')">English</a>
+      <a href="index.html" onclick="changeLanguage('ro')">Română</a>
+    </div>
+</nav>
+
   <header class="hero">
   <video id="background-video" autoplay muted loop playsinline>
     <source src="Media/candida.mp4" type="video/mp4">
   </video>
 
   <div class="hero-content">
-    <h1>CHESTIONAR CANDIDA</h1>
-    <button class="glow-btn">Începe chestionarul acum!</button>
+    <h1 data-i18n="Candida Questionnaire"></h1>
+    <button class="glow-btn" data-i18n="Start the questionnaire now!"></button>
   </div>
 
 </header>
@@ -48,5 +63,7 @@
   <footer>
     <small>&copy; <span id="year"></span> My Company</small>
   </footer>
+
+  <script src="JavaScript/index.js"></script>
 </body>
 </html>

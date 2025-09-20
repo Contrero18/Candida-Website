@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root { --bg: #f97cac; }
+:root { --bg2: #d17ca7; }
+
+ html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+}
+
+nav{
+  position:absolute;
+  z-index: 2;
+
+}
+
+.language-btn{
+  display:inline-flex; 
+  align-items:center; 
+  gap:6px;
+  padding:8px 10px; 
+  border:1px solid #ddd; 
+  border-radius:10px;
+  background:#fff; 
+  color:#444; 
+  cursor:pointer;
+}
+
+.language-btn:focus-visible{ 
+  outline:2px solid #8ab4f8;
+   outline-offset:2px; 
+}
+
+.chev{
+  width: 20px;
+  height: 20px;
+  transition: transform .2s ease;
+  opacity: .7;
+}
+
+#logo-image{
+  width: 16px;
+  height: 12px;
+  margin-right: 3px;
+}
+
+#language-menu{
+  position:absolute; 
+  top:100%; 
+  left:0; 
+  margin-top:6px;
+  background:#fff; 
+  border:1px solid #ddd; 
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  padding:8px; 
+  min-width:180px;
+}
+
+#language-menu a{ 
+  display:block; 
+  padding:8px 10px; 
+  border-radius:8px; 
+  color:#333; 
+  text-decoration:none; 
+}
+
+#language-menu a:hover{ 
+  background:#f3f3f3; 
+}
+
+
+.hero{
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  align-content: center;
+}
+
+#background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    min-width: 100%;
+    max-height: 100%;
+    transform: scaleX(-1);
+    z-index: -2;
+    pointer-events: none;
+    object-fit: cover;
+    /*
+     background: linear-gradient(
+    rgba(0,0,0,.25),          // darken top a bit
+    rgba(0,0,0,.10) 55%,
+    rgba(198,154,167,1) 98%   // blend into page bg near the wave 
+  );*/
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: clamp(1.15em, 5vw, 2.5em);
+    padding: 20vh 10vw;
+}
+
+.wave-sep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;              /* stick to the bottom edge */
+  height: 120px;          /* wave height; tweak to taste */
+  width: 100%;
+  z-index: -1;            /* in front of the video, behind content */
+}
+
+.wave-sep path {
+  fill: var(--bg);        /* same color as page background */
+  opacity: 1;
+  filter: blur();
+  filter: drop-shadow(0 -2px 6px rgba(0,0,0,.15));
+}
+
+.hero-content h1{
+    margin-bottom: 10px;
+}
+
+.glow-btn {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 2px solid var(--bg);
+  border-radius: 12px;
+  cursor: pointer;
+
+  /* glow border effect */
+  box-shadow: 0 0 10px var(--bg),
+              0 0 20px rgba(249, 124, 172);
+
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.glow-btn:hover {
+  color: #fff;
+  background: var(--bg);
+  box-shadow: 0 0 20px var(--bg),
+              0 0 40px var(--bg),
+              0 0 60px var(--bg);
+  transform: scale(1.05);
+}
+
+/* active (when clicked) */
+.glow-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px var(--bg),
+              0 0 20px rgba(249, 124, 172);
+}
