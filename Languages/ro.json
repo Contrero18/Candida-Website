@@ -3,5 +3,36 @@
     "language-btn": "Română",
     "Candida Questionnaire": "CHESTIONAR CANDIDA",
     "Start the questionnaire now!": "Începe chestionarul acum!",
-    "footer_text": "© 2023 All rights reserved."
+    "footer_text": "© 2023 All rights reserved.",
+    "yes": "Da",
+    "no": "Nu",
+    "Have you taken tetracyclines": "Ai luat vreodată tetraciclină sau alte antibiotice pentru acnee timp de o lună (sau mai mult)?",
+    "Have you, at any time in your life": "Ai luat vreodată în viață antibiotice cu spectru larg (de exemplu: amoxicilină cu clavulanat - Augmentin, ciprofloxacină - Ciprinol, azitromicină -Sumamed și doxiciclină - Vibramycin) sau alte medicamente antibacteriene pentru infecții respiratorii, urinare sau alte tipuri de infecții de cel puțin patru ori într-un an?",
+    "Have you taken a broad spectrum antibiotic drug": "Ai luat vreodată un antibiotic cu spectru larg (de exemplu: amoxicilină cu clavulanat - Augmentin, ciprofloxacină - Ciprinol, azitromicină -Sumamed și doxiciclină - Vibramycin)  – chiar și o singură doză? ",
+    "bothered by persistent prostatitis, vaginitis": "Ai fost vreodată deranjat(ă) de prostatită persistentă (inflamație a prostatei cauzată de infecții bacteriene sau factori non-infecțioși), vaginită (inflamație a vaginului, de obicei provocată de infecții fungice, bacteriene, parazitare) sau alte probleme care afectează organele reproducătoare?",
+    "Are your symptoms worse on damp, muggy days or in moldy places?": "Simptomele tale se agravează în zile umede, calde sau în locuri cu mucegai?",
+    "Do you crave sugar?": "Ai poftă de dulce?",
+    "Do you crave breads?": "Te simți „bolnav(ă) peste tot”, deși ai fost la mai mulți medici și nu s-a găsit o cauză?",
+    "Do you crave alcoholic beverages?": "Ai probleme de memorie sau concentrare – simți uneori că ești „în ceață”?",
+    "Does tobacco smoke really bother you?": "Te deranjează mult fumul de țigară?",
+
+    "Have you been pregnant?": "Ai fost însărcinată?",
+    "Never": "Niciodată",
+    "One time": "O singură dată",
+    "Two or more times": "De două ori sau mai mult",
+
+    "Have you taken birth control pills?": "Ai luat anticoncepționale?",
+    "For more than two years": "Mai mult de doi ani",
+    "For six months to two years": "Între șase luni și doi ani",
+    "For less than six months": "Mai putin de șase luni",
+    "Not at all": "Deloc",
+
+    "Have you taken prednisone, decadron or other cortisone-type drugs?": "Ai luat steroizi (exemplu: Dexametazonă, Prednison etc) pe cale orală, prin injecții sau inhalare?",
+    "For two weeks or less": "Două săptămâni sau mai puțin",
+    "For more than two weeks": "Mai mult de două săptămâni",
+
+    "Does exposure to perfumes, insecticides, fabric shop odors, and other chemicals provoke symptoms?": "Expunerea la parfumuri, insecticide, mirosuri din ateliere textile sau alte substanțe chimice, ce îți provoacă?",
+    "Mild symptoms": "Simptome ușoare",
+    "Moderate to severe symptoms":"Simptome moderate sau severe",
+    "Nothing": "Nimic"
 }

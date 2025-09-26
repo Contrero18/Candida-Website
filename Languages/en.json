@@ -3,5 +3,41 @@
     "language-btn": "English",
     "Candida Questionnaire": "CANDIDA QUESTIONNAIRE",
     "Start the questionnaire now!": "Start the questionnaire now!",
-    "footer_text": "© 2023 All rights reserved."
+    "footer_text": "© 2023 All rights reserved.",
+
+    "yes": "Yes",
+    "no": "No",
+    "Have you taken tetracyclines": "Have you taken tetracyclines (Sumycin, Panmycino, Vibramycin, Minocin, etc.) or other antibiotics for acne for one month (or longer)?",
+    "Have you, at any time in your life": "Have you, at any time in your life, taken other “broad spectrum” antibiotics for respiratory, urinary, or other infections (for two months or longer, or in shorter courses four or more times in a one-year period)?",
+    "Have you taken a broad spectrum antibiotic drug": "Have you taken a broad spectrum antibiotic drug*, even a single course?",
+    "bothered by persistent prostatitis, vaginitis": "Have you, at any time in your life, been bothered by persistent prostatitis, vaginitis, or other problems affecting your reproductive organs?",
+    "Are your symptoms worse on damp, muggy days or in moldy places?": "Are your symptoms worse on damp, muggy days or in moldy places?",
+    "Do you crave sugar?": "Do you crave sugar?",
+    "Do you crave breads?": "Do you crave breads?",
+    "Do you crave alcoholic beverages?": "Do you crave alcoholic beverages?",
+    "Does tobacco smoke really bother you?": "Does tobacco smoke really bother you?",
+
+    "Have you been pregnant?": "Have you been pregnant?",
+    "Never": "Never",
+    "One time": "One time",
+    "Two or more times": "Two or more times",
+
+    "Have you taken birth control pills?": "Have you taken birth control pills?",
+    "For more than two years": "For more than two years",
+    "For six months to two years": "For six months to two years",
+    "For less than six months": "For less than six months",
+    "Not at all": "Not at all",
+
+    "Have you taken prednisone, decadron or other cortisone-type drugs?": "Have you taken prednisone, decadron or other cortisone-type drugs?",
+    "For two weeks or less": "For two weeks or less",
+    "For more than two weeks": "For more than two weeks",
+
+    "Does exposure to perfumes, insecticides, fabric shop odors, and other chemicals provoke symptoms?": "Does exposure to perfumes, insecticides, fabric shop odors, and other chemicals provoke symptoms?",
+    "Mild symptoms": "Mild symptoms",
+    "Moderate to severe symptoms":"Moderate to severe symptoms",
+    "Nothing": "Nothing",
+
+    "Have you had athlete's foot, ringworm": "Have you had athlete’s foot, ringworm, \"jock itch\" or other chronic fungus infections of the skin or nails?",
+    "Severe or persistent": "Severe or persistent",
+    "Mild to moderate": "Mild to moderate"
 }

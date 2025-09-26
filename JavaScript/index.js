@@ -56,9 +56,15 @@ document.addEventListener('click', (e) => {
 });
 
 
+const toTop = document.querySelector(".to-top");
 
-
-
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 50) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+});
 
 
 document.getElementById("extra-text").textContent = "This text was added by JavaScript!";

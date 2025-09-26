@@ -1,0 +1,131 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root { --bg: #f5ffbc; }
+:root { --bg2: #d17ca7;
+--radio-button: #fb0064;
+--radio-circle: #25eb28;
+}
+
+ html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollBar{
+    width: 0.4vw;
+}
+html::-webkit-scrollbar-track{
+  background: #000002;
+}
+html::-webkit-scrollBar-thumb{
+    background: #fff;
+    border-radius: 100vw;
+}
+html::-webkit-scrollBar-thumb:hover{
+    background: var(--bg);
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+}
+
+.hero{
+  position: relative;
+  height: 20dvh;
+  overflow: hidden;
+  align-content: center;
+}
+
+.hero-text{
+    position: relative;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: clamp(0.8em, 5vw, 1.7em);
+}
+
+
+
+.go-back {
+  transition: all .4s;
+}
+
+.go-back-chev{
+  background: #ffffff;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  transition: 0.4s;
+  transform: rotate(90deg);
+}
+
+.go-back-chev:hover{
+  background: #bbbbbb;
+  cursor: pointer;
+}
+
+.go-back-chev path{
+  color: #000002;
+}
+
+.container{
+    margin-inline: auto;
+    width: clamp(300px, 88%, 3600px);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding:1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container h3{
+    margin-bottom: .5rem;
+}
+
+  .radio{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+    cursor:pointer;
+    font-weight:500;
+    width: fit-content;
+  }
+
+  .radio input{
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
+  }
+
+.custom{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:2px solid var(--radio-button);
+    display:grid;
+    place-items:center;
+    transition:.2s;
+  }
+  .dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--radio-circle);
+    transform:scale(0);
+    transition:.2s;
+  }
+  .radio input:checked + .custom{
+    border-color:var(--radio-circle);
+  }
+  .radio input:checked + .custom .dot{
+    transform:scale(1);
+  }
